@@ -1,0 +1,13 @@
+La presentazione è composta da 5 pagine web distinte che sono collegate l'una con l'altra tramite link.
+Il file codificato si chiama "pagine_xml.xml".
+La pagina iniziale della presentazione è homepage.html
+
+Comando per la validazione XML tramite Xerces
+java -cp "xerces-2_12_1/*" dom.Counter -v pagine_xml.xml
+
+Comando per la generazione del documento HTML tramite XSLT Saxon
+java -jar saxon-he-10.3.jar -s:pagine_xml.xml -xsl:homepage.xsl -o:homepage.html
+java -jar saxon-he-10.3.jar -s:pagine_xml.xml -xsl:28nov.xsl -o:28nov.html
+java -jar saxon-he-10.3.jar -s:pagine_xml.xml -xsl:29_39nov.xsl -o:29_30nov.html
+java -jar saxon-he-10.3.jar -s:pagine_xml.xml -xsl:r:digitale.xsl -o:r_digitale.html
+java -jar saxon-he-10.3.jar -s:pagine_xml.xml -xsl:biblio.xsl -o:biblio.html

@@ -1,0 +1,145 @@
+/*generali*/
+body {
+  max-width: 100%;
+  min-width: 100%;
+  margin:0;
+  box-sizing: border-box;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 15px ;
+	bottom:0;}
+
+  p{
+    margin:0;
+  }
+
+
+/*titolo e navbar*/
+#top{
+  background-color: #faebd7;
+  top:0;
+  margin-top:0;
+  padding-top:0;
+  box-sizing: border-box; /* o content-box */
+  height:80px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.17);
+  width:100%;
+
+}
+
+#titolo {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 25px;
+  text-align:center;
+  color:white;
+  padding:0;
+  margin-top:0px;
+  margin-bottom:0px;
+  height:30px;
+}
+
+#navbar {
+  height: 40px;
+  width: 100%;
+  padding:0;
+  margin:0;
+  align-items: center; /* Centra verticalmente */
+
+}
+
+#navbar a { 
+  float: left;
+  text-align: center;
+  padding: 24px 24px;
+  text-decoration: bold;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  align-items: center; /* Centra verticalmente */
+  text-decoration:none; color:grey;
+
+}
+
+a:hover {color:black;}
+
+/*contenuto della pagina*/
+
+#risorse {
+  flex: 1; /* Occupa il resto dello spazio disponibile */
+  display: flex; /* Per utilizzare flexbox */
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+  margin-left: 10%;
+  margin-right:10%;
+}
+img {width: 300px;}
+
+.contieniimg {
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+	
+  margin-top:3%;
+	display: inline-block;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+#contenutoimage {
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+#contienitesto {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+  border: 1px solid lightgrey;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  width: 100%;
+  margin: 10 auto; /* Aggiunto per centrare orizzontalmente */
+}
+
+#mostratesto {display: none;height: 0px;}
+
+.overstrike {text-decoration: line-through;}
+
+
+
+#contenuto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Allinea gli elementi a sinistra verticalmente */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*link per spostarsi alle altre pagine*/
+#back{
+  width:90px;
+  float: left;
+  margin-top:0.5%;
+  margin-right:10%;
+  }
+
+/*footer*/
+.footer {
+  flex-shrink: 0;
+  width: 100%; /* Larghezza del 90% */
+  margin: 0 auto; /* Per centrare orizzontalmente */
+  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px; /* Aggiungi uno spazio di 10px dal testo ai bordi */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+label {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  font-weight: bold;
+  
+}
